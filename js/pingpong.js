@@ -2,6 +2,7 @@
 for múltiplo de 3 imprimir PING, se for múltiplo de 5 imprime PONG e 
 toda vez que for múltiplo de 3 e 5 imprime PING PONG */
 
+// While
 
 i = 0
 
@@ -15,4 +16,16 @@ while (i < 100) {
         console.log(`${i} - PONG`)
     }
     ++i
+}
+
+// For
+
+for (let i = 0; i < 100; i++){
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log('PING PONG')
+    }else if (i % 3 === 0){
+        console.log('PING')
+    }else if (i % 5 === 0){
+        console.log('PONG')
+    }
 }
