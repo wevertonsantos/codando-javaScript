@@ -1,0 +1,9 @@
+{
+    "nome": "Weverton",
+    "idade": 30,
+    "esta_trabalhando": true,
+    "detalhes_profi":{
+        "profissao": "Programador"
+    },
+    "hobbies": ["Programar"]
+}
