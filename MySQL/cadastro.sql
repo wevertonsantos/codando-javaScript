@@ -97,7 +97,7 @@
 
 -- -- // Exercícios MySQL passado em aula:
 
--- 1 - Lista de todas as gafanhotas
+-- 1 - Lista de todas as gafanhotas //
 
 -- 2 - Uma lista com os dados de todos aqueles que nasceram entre 1/jan/2000 e 31/dez/2015
 
@@ -117,3 +117,6 @@
 
 -- // Resoluções e códigos:
 
+-- 1 - SELECT  nome
+-- FROM    gafanhotos
+-- WHERE   sexo = 'F';
