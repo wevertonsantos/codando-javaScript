@@ -99,7 +99,7 @@
 
 -- 1 - Lista de todas as gafanhotas //
 
--- 2 - Uma lista com os dados de todos aqueles que nasceram entre 1/jan/2000 e 31/dez/2015
+-- 2 - Uma lista com os dados de todos aqueles que nasceram entre 1/jan/2000 e 31/dez/2015 //
 
 -- 3 - Uma lista com o nome de todos os homens que trabalham como Programadores
 
@@ -115,8 +115,19 @@
 
 -- 9 - Quantas gafanhotos mulheres tem mais de 1.90 de altura
 
--- // Resoluções e códigos:
+-- ** Resoluções e códigos: **
 
--- 1 - SELECT  nome
+-- // Primeiro Exercício
+
+-- SELECT  nome
 -- FROM    gafanhotos
 -- WHERE   sexo = 'F';
+
+-- // Segundo Exercício
+
+-- SELECT 	nascimento
+-- FROM	gafanhotos
+-- WHERE	nascimento
+-- BETWEEN '2000-01-01'
+-- AND		'2015-12-31'
+-- ORDER BY	nascimento;
