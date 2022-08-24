@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach</title>
+</head>
+<body>
+    
+    <script>
+        // Função aceita 3 parâmetros (valor atual, índice, array completo)
+        // Função de callback
+
+        // forEach simples
+
+        // let pessoas = ['João', 'Maria', 'José']
+
+        /* -Valor atual para cada vez que passar o array
+          - Indice que vai ser a posição de cada elemento
+          - Array completo para dentro de uma variável (pode ser ocultado) */
+        // pessoas.forEach((valorAtual, indice, arrayCompleto) => {
+        //     console.log(valorAtual,indice,arrayCompleto)
+        // })
+
+        // forEach array de objetos
+
+        // let produtos = [
+        //     {
+        //         nomeProduto: 'Celular',
+        //         valorProduto: '1200.00',
+        //         porcentagemDesconto: 0.20
+        //     },
+        //     {
+        //         nomeProduto: 'Notebook',
+        //         valorProduto: '2500.00',
+        //         porcentagemDesconto: 0.30
+        //     },
+        //     {
+        //         nomeProduto: 'Televisão',
+        //         valorProduto: '3500.00',
+        //         porcentagemDesconto: 0.35
+        //     }
+        // ]
+
+        // produtos.forEach((produtoAtual) => {
+        //     console.log(produtoAtual.nomeProduto + ' ' + produtoAtual.valorProduto)
+        // })
+
+        // forEach no dia a dia para calcular valor
+
+        let produtos = [
+            {
+                nomeProduto: 'Celular',
+                valorProduto: '1200.00',
+                porcentagemDesconto: 0.20
+            },
+            {
+                nomeProduto: 'Notebook',
+                valorProduto: '2500.00',
+                porcentagemDesconto: 0.30
+            },
+            {
+                nomeProduto: 'Televisão',
+                valorProduto: '3500.00',
+                porcentagemDesconto: 0.35
+            }
+        ]
+            
+        produtos.forEach((produtoAtual, indice) => {
+
+            let valorComDesconto = (produtoAtual.valorProduto * produtoAtual.porcentagemDesconto)
+
+            console.log(produtoAtual.nomeProduto + ' ' + produtoAtual.valorProduto)
+            
+            console.log(`Desconto: ${valorComDesconto}`)
+
+            valorTotal = (produtoAtual.valorProduto - valorComDesconto)
+
+            console.log(`Total do produto com desconto: ${valorTotal}`)
+        })
+
+    </script>
+    
+</body>
+</html>
