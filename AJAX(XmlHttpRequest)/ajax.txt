@@ -1,0 +1,3 @@
+Consiga requisições em segundo plano
+Padrão de objeto em todos os navegadores
+Utilizado para requisições HTTP
